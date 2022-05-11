@@ -1,0 +1,32 @@
+.team-slide {
+    position: relative;
+    display: inline-block;
+    width: 320px;
+    height: 320px;
+    padding: 27px;
+
+    text-shadow: 1px 1px 2px #000;
+}
+
+.team-slide .card-img-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.team-slide .card-img-overlay.hover {
+    background-color: #777;
+    transition: all .3s;
+}
+.team-slide:hover .card-img-overlay.hover {
+    opacity: 0;
+}
+.team-slide h4 {
+    bottom: 36px !important;
+    font-size: 60px;
+} 
+.team-slide h5 {
+    font-size: 36px;
+}

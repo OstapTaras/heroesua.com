@@ -1,0 +1,8 @@
+.btn-nftua {
+    background-color: #353535;
+    border-radius: 0px;
+    color:#fff;
+}
+.btn-nftua.trnsp {
+    background: none;
+}

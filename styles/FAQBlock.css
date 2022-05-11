@@ -1,0 +1,30 @@
+.faq-block {
+    margin-top: 150px;
+}
+.faq-block .title-row {
+    /* text-align: right; */
+}
+
+.faq-block .accordion-row {
+
+}
+.faq-block .accordion-row .accordion-item {
+    border-radius: 0;
+    background-color: #353535;
+}
+.faq-block .accordion-row .accordion-item .accordion-button {
+    font-size: 30px;
+}
+.faq-block .accordion-row .accordion-item .accordion-body {
+    font-size: 22px;
+}
+.faq-block .accordion-row .accordion-item .accordion-button,
+.faq-block .accordion-row .accordion-item .accordion-button.collapsed
+{
+    color: rgb(197, 201, 206);
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.faq-block .accordion-row .accordion-item .accordion-button.collapsed {
+    background-color: #252525;
+}

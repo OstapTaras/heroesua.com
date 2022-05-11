@@ -1,0 +1,83 @@
+.carousel.slide {
+    width: 100%;
+}
+.card {
+    cursor: pointer;
+}
+.card .card-title {
+    position: absolute;
+    bottom: 0;
+    transition: bottom .3s;
+}
+.card .badge {
+    margin-left: -53px;
+    margin-top: 31px;
+    padding: 8px 16px;
+    font-size: 24px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0%);
+}
+
+.card-info {
+    opacity: 0;
+    transition: .3s;
+}
+.card:hover .card-info {
+    opacity: 1;
+}
+.card:hover .card-main h5.card-title {
+    bottom: -57px;
+}
+.card-info .card-title {
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 34px 14px;
+}
+.carousel-control {
+    margin-bottom: -86px;
+}
+.carousel-control .carousel-control-icon {
+    position: absolute;
+    bottom: 42px;
+}
+.carousel-control-next-icon {
+    right: 3px;
+}
+.carousel-control-prev-icon {
+    left: 8px;
+}

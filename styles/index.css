@@ -1,0 +1,16 @@
+@import url('./globals.css');
+
+@import url('./bootstrapCustom.css');
+
+@import url('./FixedBackground.css');
+@import url('./TopNavBar.css');
+@import url('./MainHeadline.css');
+@import url('./BlogGallery.css');
+@import url('./CentralBlock.css');
+@import url('./TeamBlock.css');
+@import url('./BioBlock.css');
+@import url('./JoinBlock.css');
+@import url('./FAQBlock.css');
+
+@import url('./PostContent.css');
+@import url('./Slider.css');

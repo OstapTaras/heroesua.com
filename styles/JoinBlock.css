@@ -1,0 +1,13 @@
+.join-block {
+    margin-top: 150px;
+}
+
+.join-block .gray-bg {
+    background-color: #252525;
+}
+.join-block .social-icon {
+    width: 75px;
+}
+.join-block .positions-row {
+    /* height: 80px; */
+}

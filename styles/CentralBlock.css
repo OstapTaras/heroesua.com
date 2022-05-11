@@ -1,0 +1,34 @@
+.central-block {
+    margin-top: 80px;
+}
+
+.buy-btn {
+    min-height: 180px;
+    width: 100%;
+}
+.buy-btn div {
+    position: relative;
+}
+.buy-btn p {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.buy-btn .right-arrow img{
+    position: absolute;
+    top: calc(50% - 17px);
+    left: 40%;
+}
+
+.anim-img {
+    position: absolute;
+}
+.anim-img.a {
+
+}
+.anim-img.b {
+    
+}
+.anim-img.c {
+    top: 200px;
+}

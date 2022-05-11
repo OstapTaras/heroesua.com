@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Mak";
+    src: url("../static/fonts/Mak/MAK.otf") format("opentype");
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+p, span, button, .std-text {
+    color: rgb(197, 201, 206);
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Mak';
+    color: rgb(197, 201, 206);
+}
+h1 {
+    font-size: 160px;
+    line-height: .8;
+}
+h2 {
+    font-size: 100px;
+    line-height: 1;
+}
+h3 {
+    font-size: 80px;
+    line-height: .8;
+}
+p {
+    font-size: 20px;
+}

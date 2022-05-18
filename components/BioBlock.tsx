@@ -8,7 +8,7 @@ interface BioBlockProps {
 const BioBlock = (props:BioBlockProps) => {
     const { shareLink } = props
     return (
-        <div className="bio-block">
+        <div className="bio-block mt-5">
             <div className="row">
                 <div className="col-2"></div>
                 <div className="col-10">
@@ -31,8 +31,8 @@ const BioBlock = (props:BioBlockProps) => {
                         <span className="mx-1 lead">&#10095;</span>
                     </button>
                 </div>
-                <div className="col-5">
-                    <img src="../static/img/eu-m.png" alt="" />
+                <div className="col-5" style={{overflow:'hidden'}}>
+                    <img src="../static/img/eu-m.png"/>
                 </div>
             </div>
 

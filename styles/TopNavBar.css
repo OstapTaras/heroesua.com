@@ -6,3 +6,11 @@
 .btn-nftua.trnsp {
     background: none;
 }
+.collapse-nav {
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
+}
+.collapse-nav.show-nav {
+    height: 320px;
+}

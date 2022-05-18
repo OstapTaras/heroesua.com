@@ -11,27 +11,45 @@ import JoinBlock from '../components/JoinBlock'
 import Footer from '../components/Footer'
 import Slider from '../components/Slider'
 import MainCM from '../content_manager'
-import LeftMenu from '../components/LeftMenu'
+import SingleNFT from '../components/SingleNFT'
+// import LeftMenu from '../components/LeftMenu'
+import GridBlock from '../components/GridBlock'
 
 
 const IndexPage = () => {
   const menuItems = MainCM.navSections
-  const { joinLink, telegramLink, discordLink, shareLink } = MainCM.links
+  const { joinLink, telegramLink, discordLink, shareLink, openseaLink } = MainCM.links
   const logoLink = '/'
   const story = MainCM.stories[0]
   return (
     <Layout pageTitle='HEROES UA | NFT'>
         <FixedBackground />
-        <TopNavBar logoLink={logoLink} joinLink={joinLink} telegramLink={telegramLink} discordLink={discordLink} shareLink={shareLink}/>
+        <TopNavBar 
+          logoLink={logoLink}
+          joinLink={joinLink}
+          telegramLink={telegramLink}
+          discordLink={discordLink}
+          shareLink={shareLink}
+          manuItems={menuItems}
+        />
         <MainHeadline menuItems={menuItems}/>
-        <Slider items={story.variations} title={story.title}/>
+        
         {/* <BlogGallery /> */}
-        <CentralBlock />
+        {/* <CentralBlock /> */}
+        <SingleNFT 
+          title='Твій цифровий слід в історії. Придбай Українську NFT' 
+          text='*Кошти, зібрані в рамках цього проекту, будуть спрямовані на героїв/їхні родини чи офіційні організації, які підтримують військові чи гуманітарні потреби.' 
+          openseaLink={openseaLink} 
+          mainImage={story.mainImage} 
+          posterImage={story.previewImage}
+        />
+        <Slider items={story.variations} title={story.title}/>
         <BioBlock shareLink={shareLink}/>
         {/* <TeamBlock /> */}
         <JoinBlock joinLink={joinLink} discordLink={discordLink} telegramLink={telegramLink}/>
         {/* <FAQBlock /> */}
-        <Footer />
+        <Footer logoLink={logoLink} menuItems={menuItems} joinLink={joinLink} shareLink={shareLink}/>
+        {/* <GridBlock display /> */}
     </Layout>
   )
 }

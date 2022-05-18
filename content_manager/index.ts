@@ -97,7 +97,7 @@ const stories:StoryType[] = [{
         {src:'../static/img/story_1/ghost_6.jpeg'},
         {src:'../static/img/story_1/ghost_7.jpg'}
     ],
-    mainImage: {src:'../static/img/story_1/ghost_main.png'},
+    mainImage: {src:'../static/img/ghost.png'},
     previewImage: {src:'../static/img/story_1/ghost_preview.png'}
 }]
 

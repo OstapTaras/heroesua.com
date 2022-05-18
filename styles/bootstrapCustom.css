@@ -81,3 +81,7 @@
 .carousel-control-prev-icon {
     left: 8px;
 }
+.nav-link {
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+}

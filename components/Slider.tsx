@@ -44,11 +44,18 @@ const SliderItem = (props:SliderItemProps) => {
 const Slider = (props:SliderProps) => {
     const {items, title} = props
     return (
-        <Carousel slidesToSlide={4} responsive={responsive}>
-            {items.map( (item, index) => {
-                return <SliderItem src={item.src} key={`${index}`}/>
-            })}
-        </Carousel>
+        <section className='section slider'>
+            <div className='row'>
+                <div className='col-md-6 offset-md-2 py-5'>
+                    <h2>{title}</h2>
+                </div>
+            </div>
+            <Carousel slidesToSlide={4} responsive={responsive}>
+                {items.map( (item, index) => {
+                    return <SliderItem src={item.src} key={`${index}`}/>
+                })}
+            </Carousel>    
+        </section> 
     )
 }
 export default Slider

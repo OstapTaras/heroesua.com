@@ -1,6 +1,6 @@
 import React from 'react'
 import { LinkType } from '../types'
-import LeftMenu from './LeftMenu'
+// import LeftMenu from './LeftMenu'
 
 
 interface MainHeadlineProps {
@@ -14,11 +14,19 @@ const MainHeadline = (props:MainHeadlineProps) => {
     return (
         <div className="main-block row px-5">
 
-            <LeftMenu items={menuItems} />
+            <ul className="nav flex-column col-4 left-side-bar d-none d-md-block">
+                {menuItems.map((item, index) => {
+                    return (
+                        <li className="nav-item" key={`left-navbar-item-${index}`}>
+                            <a className="nav-link" href={item.url}>{item.name}</a>
+                        </li>
+                    )
+                })}
+            </ul>
 
-            <div className="col-6 px-0">
+            <div className="col-12 col-md-6 px-0">
                 <h1 className="main-heading mb-5">Герої воєнної України</h1>
-                <p className="col-5 mb-5 main-subheading">Історії про самовідданих 
+                <p className="col-12 col-md-7 col-lg-5 mb-5 main-subheading">Історії про самовідданих 
                     з 24 лютого по сьогодення</p>
                 <br />
                 <p className="my-5">Проєкт Ukraine War - це історія української війни в діях та образах сучасних героїв. Наша мета показати обличчя країни через конкретні приклади непересічних людей, щоб ця боротьба не стерлась з пам'яті українців та іноземців разом із повідомленнями стрічки новин.
@@ -27,7 +35,7 @@ const MainHeadline = (props:MainHeadlineProps) => {
                     Тож коли ця війна закінчиться, наша історія перемоги буде не черговою статистикою, а біографією України в героях.</p>
             </div>
 
-            <div className="col position-relative">
+            <div className="col position-relative d-none d-md-block">
                 <div className="zub3-bg">
                     <img src="../static/img/3zub.png" alt="" />
                 </div>

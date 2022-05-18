@@ -1,0 +1,13 @@
+.single-nft {
+    background-color: #252525;
+}
+.single-nft .main-image-block {
+    position: relative;
+    height: 598px;
+}
+.single-nft .main-image-block img {
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+    width: 100%;
+}

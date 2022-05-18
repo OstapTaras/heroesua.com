@@ -32,9 +32,6 @@ const CentralBlock = () => {
                                 <img src="../static/img/right-arrow.png" alt="" />
                             </div>
                         </div>
-                        
-                        
-                        
                     </button>
                 </div>
             </div>

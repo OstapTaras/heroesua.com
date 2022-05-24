@@ -16,7 +16,7 @@ import SingleNFT from '../components/SingleNFT'
 import GridBlock from '../components/GridBlock'
 
 
-const IndexPage = () => {
+const HomePage = () => {
   const menuItems = MainCM.navSections
   const { joinLink, telegramLink, discordLink, shareLink, openseaLink } = MainCM.links
   const logoLink = '/'
@@ -54,4 +54,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default HomePage

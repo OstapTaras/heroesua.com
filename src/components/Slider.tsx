@@ -47,12 +47,13 @@ const Slider = (props:SliderProps) => {
         <section className='section slider'>
             <div className='row'>
                 <div className='col-md-6 offset-md-2 py-5'>
-                    <h2>{title}</h2>
+                    <h2 className='d-none d-md-block'>{title}</h2>
+                    <h3 className='d-md-none text-center'>{title}</h3>
                 </div>
             </div>
             <Carousel slidesToSlide={4} responsive={responsive}>
                 {items.map( (item, index) => {
-                    return <SliderItem src={item.src} key={`${index}`}/>
+                    return <SliderItem src={item.src} key={`slider-item-${index}`}/>
                 })}
             </Carousel>    
         </section> 

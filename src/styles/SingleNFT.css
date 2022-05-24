@@ -5,9 +5,13 @@
     position: relative;
     height: 598px;
 }
-.single-nft .main-image-block img {
+.single-nft .main-image-block .main-image-block-wrapper {
     position: absolute;
     top: -2rem;
     left: 2rem;
     width: 100%;
+}
+.single-nft .main-image-block .main-image-block-wrapper img {
+    max-width: 100%;
+    min-height: 100%;
 }

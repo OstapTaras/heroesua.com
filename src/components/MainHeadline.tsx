@@ -14,7 +14,7 @@ const MainHeadline = (props:MainHeadlineProps) => {
     return (
         <div className="main-block row px-5">
 
-            <ul className="nav flex-column col-4 left-side-bar d-none d-md-block">
+            <ul className="nav flex-column col-md-3 left-side-bar d-none d-md-block">
                 {menuItems.map((item, index) => {
                     return (
                         <li className="nav-item" key={`left-navbar-item-${index}`}>
@@ -24,8 +24,9 @@ const MainHeadline = (props:MainHeadlineProps) => {
                 })}
             </ul>
 
-            <div className="col-12 col-md-6 px-0">
-                <h1 className="main-heading mb-5">Герої воєнної України</h1>
+            <div className="col-12 col-sm-8 col-md-8 col-lg-6 px-0">
+                <h1 className="main-heading mb-5 d-none d-lg-block">Герої воєнної України</h1>
+                <h1 className="main-heading smaller mb-5 d-lg-none">Герої воєнної України</h1>
                 <p className="col-12 col-md-7 col-lg-5 mb-5 main-subheading">Історії про самовідданих 
                     з 24 лютого по сьогодення</p>
                 <br />

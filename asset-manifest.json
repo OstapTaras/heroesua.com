@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/heroesua.com/static/css/main.3f13b41e.css",
-    "main.js": "/heroesua.com/static/js/main.9cc58d34.js",
+    "main.js": "/heroesua.com/static/js/main.7a98cf7d.js",
     "static/media/bg.png": "/heroesua.com/static/media/bg.2d6ca899dedd797886c8.png",
     "static/media/MAK.otf": "/heroesua.com/static/media/MAK.c835575560627cfc2a04.otf",
     "static/media/revicons.eot": "/heroesua.com/static/media/revicons.a77de540a38981833f9e.eot",
@@ -9,10 +9,10 @@
     "static/media/revicons.woff": "/heroesua.com/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/heroesua.com/index.html",
     "main.3f13b41e.css.map": "/heroesua.com/static/css/main.3f13b41e.css.map",
-    "main.9cc58d34.js.map": "/heroesua.com/static/js/main.9cc58d34.js.map"
+    "main.7a98cf7d.js.map": "/heroesua.com/static/js/main.7a98cf7d.js.map"
   },
   "entrypoints": [
     "static/css/main.3f13b41e.css",
-    "static/js/main.9cc58d34.js"
+    "static/js/main.7a98cf7d.js"
   ]
 }
